@@ -19200,6 +19200,12 @@
     githubId = 6778250;
     name = "Nick Wilburn";
   };
+  railwhale = {
+    email = "63928521+railwhale@users.noreply.github.com";
+    github = "railwhale";
+    githubId = 63928521;
+    name = "Reuben Ferabend";
+  };
   raitobezarius = {
     email = "ryan@lahfa.xyz";
     matrix = "@raitobezarius:matrix.org";
