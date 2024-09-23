@@ -7,13 +7,13 @@
 
 buildGoModule rec {
   pname = "portmaster";
-  version = "1.6.23";
+  version = "1.6.24";
 
   src = fetchFromGitHub {
     owner = "safing";
     repo = "portmaster";
     rev = "v${version}";
-    hash = "sha256-N7JljpWp6p9BsOI8Fh0sII0GzaBuhmTM/KBGAjZ8I2s=";
+    hash = "sha256-45UXpwg+wBL8L4dSgnofCeZA9wbV4o08mlDcdAzc2hw=";
   };
 
   postPatch = ''
@@ -50,6 +50,7 @@ buildGoModule rec {
     maintainers = with lib.maintainers; [
       nyanbinary
       sntx
+      railwhale
     ];
   };
 }
