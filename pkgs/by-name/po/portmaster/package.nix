@@ -7,20 +7,20 @@
 
 buildGoModule rec {
   pname = "portmaster";
-  version = "1.6.24";
+  version = "1.6.18";
 
   src = fetchFromGitHub {
     owner = "safing";
     repo = "portmaster";
     rev = "v${version}";
-    hash = "sha256-45UXpwg+wBL8L4dSgnofCeZA9wbV4o08mlDcdAzc2hw=";
+    hash = "sha256-K/HEDVWgjW//m+CqIiL+xgKRObNMOtjY1Z8myTkDXSw=";
   };
 
   postPatch = ''
     substituteInPlace service/updates/main.go --replace-fail 'DisableSoftwareAutoUpdate = false' 'DisableSoftwareAutoUpdate = true'
   '';
 
-  vendorHash = "sha256-HWoLfAWfZeHcVCp0q/AxJ3q/1KzOpoft2TZwaxORTL8=";
+  vendorHash = "sha256-/sxjCSPhsZZwQv7w1bKiBoBnS7jozJIbyu8S64TOe4Q=";
 
   CGO_ENABLED = 0;
 
