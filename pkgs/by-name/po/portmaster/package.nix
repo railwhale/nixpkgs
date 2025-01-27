@@ -22,7 +22,7 @@ buildGoModule rec {
 
   vendorHash = "sha256-/sxjCSPhsZZwQv7w1bKiBoBnS7jozJIbyu8S64TOe4Q=";
 
-  CGO_ENABLED = 0;
+  env.CGO_ENABLED = 0;
 
   runtimeDependencies = [ iptables ];
 
